@@ -232,7 +232,7 @@ function LeaveForm({ match }) {
                   {searchResults.map((result) => (
                     <tr key={result._id}>
                       <td style={tableCellStyle}>{result.leaveType}</td>
-                      <td style={tableCellStyle}>{result.startDate}</td>
+                      <td style={tableCellStyle}>{result.startDate.split("T")[0]}</td>
                       <td style={tableCellStyle}>{result.numberOfDays}</td>
                       <td style={tableCellStyle}>{result.reason}</td>
                       <td style={tableCellStyle}>{result.status}</td>

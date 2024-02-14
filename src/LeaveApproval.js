@@ -50,7 +50,7 @@ const LeaveApproval = () => {
             <tr key={leave._id} style={tableRowStyle}>
               <td style={tableCellStyle}>{leave.employeeId}</td>
               <td style={tableCellStyle}>{leave.leaveType}</td>
-              <td style={tableCellStyle}>{leave.startDate}</td>
+              <td style={tableCellStyle}>{leave.startDate.split("T")[0]}</td>
               <td style={tableCellStyle}>{leave.numberOfDays}</td>
               <td style={tableCellStyle}>{leave.reason}</td>
               <td style={tableCellStyle}>{leave.status}</td>
